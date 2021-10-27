@@ -143,13 +143,13 @@ val_dataset = CreateDataset(val_imgs, mode = 'val', transforms = get_val_transfo
 train_data_loader = DataLoader(
             dataset = train_dataset,
             num_workers = 0,
-            batch_size = 1,
+            batch_size = 16,
             shuffle = True
 )
 val_data_loader = DataLoader(
             dataset = val_dataset,
             num_workers = 0,
-            batch_size = 1,
+            batch_size = 16,
             shuffle = True
 )
 
